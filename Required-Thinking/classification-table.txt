@@ -1,0 +1,16 @@
+| Item | Classification | Reason |
+|---|---|---|
+| Patient | Entity | Stores patient information |
+| Doctor | Entity | Stores doctor information |
+| Department | Entity | Groups doctors and services |
+| Appointment | Entity | Represents patient visit booking |
+| Service | Entity | Represents hospital service |
+| Billing | Entity | Stores bill information |
+| Payment | Entity | Supports multiple payment methods |
+| Insurance | Entity | Stores patient insurance |
+| Service_Category | Entity | Groups services |
+| Age | Derived Attribute | Calculated from DOB |
+| Phone | Multi-valued Attribute | Patient may have more than one phone |
+| Total_Amount | Derived Attribute | Calculated from services |
+| Quantity | Relationship Attribute | Belongs to Appointment-Service relationship |
+| Appointment-Service | M:N Relationship | One appointment has many services and one service appears in many appointments |

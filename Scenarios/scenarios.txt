@@ -1,0 +1,11 @@
+Appointment cancellation:
+The appointment is not deleted. The status is changed to Cancelled.
+
+Doctor leaving:
+Doctor status can be changed to inactive. Old appointments and medical records remain stored.
+
+Partial payment:
+Billing can have multiple payments. Each payment stores amount, method, and date.
+
+Service price changes:
+The system keeps the service price at the time of appointment to protect old bills.

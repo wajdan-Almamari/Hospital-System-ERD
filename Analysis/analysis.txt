@@ -1,0 +1,27 @@
+Entities:
+Patient, Doctor, Department, Appointment, Service, Medical_Record, Billing, Insurance, Payment, Doctor_Schedule, Service_Category
+
+Attributes:
+Patient: Patient_ID, Name, DOB, Age, Gender, Blood_Group, Phone
+Doctor: Doctor_ID, Specialization, Professional_Details
+Department: Dept_ID, Dept_Name
+Appointment: Appointment_ID, Date, Time, Status, Type
+Service: Service_ID, Name, Type, Price
+Billing: Bill_ID, Total_Amount
+Payment: Payment_ID, Amount, Payment_Method, Payment_Date
+Insurance: Insurance_ID, Provider_Name, Coverage_Percentage
+Service_Category: Category_ID, Category_Name
+Doctor_Schedule: Schedule_ID, Day, Start_Time, End_Time
+
+Relationships:
+Patient has Appointment
+Doctor handles Appointment
+Doctor works in Department
+Doctor acts as Head of Department
+Department offers Service
+Appointment has Service
+Appointment has Billing
+Billing has Payment
+Patient has Insurance
+Service_Category groups Service
+Doctor has Schedule
